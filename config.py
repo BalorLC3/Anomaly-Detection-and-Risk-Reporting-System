@@ -24,7 +24,7 @@ CV_N_SPLITS  = 3      # cross-validation folds
 CV_RANDOM_STATE = 17
 
 # -- LLM (Ollama / DeepSeek) --
-OLLAMA_MODEL       = "deepseek-r1:8b"   
+OLLAMA_MODEL       = "qwen2.5:1.5b"   
 OLLAMA_TEMPERATURE = 0.2                # low = consistent, factual output
 
 # -- RAG --

@@ -7,7 +7,7 @@ of the generation logic.
 
 from langchain_core.prompts import PromptTemplate
 
-# ── Single anomaly explanation ─────────────────────────────────────────────
+# -- Single anomaly explanation ---
 
 SINGLE_ANOMALY_PROMPT = PromptTemplate(
     input_variables=[
@@ -33,17 +33,17 @@ Write a concise, professional explanation suitable for inclusion in a risk repor
 {historical_context}
 
 ## Instructions
-1. In 2–3 sentences, explain why this transaction is anomalous.
+1. In 2-3 sentences, explain why this transaction is anomalous.
 2. Identify the most critical risk factors and their significance.
 3. Reference any relevant patterns from the historical cases above.
 4. Recommend one specific next action: investigate, escalate, monitor, or dismiss.
-5. Keep the total response under 200 words. Be direct — no filler phrases.
+5. Keep the total response under 200 words. Be direct - no filler phrases.
 
 Report:""",
 )
 
 
-# ── Executive summary for a full detection run ────────────────────────────
+# -- Executive summary for a full detection run --
 
 SUMMARY_REPORT_PROMPT = PromptTemplate(
     input_variables=[

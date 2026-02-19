@@ -1,6 +1,4 @@
 """
-evaluation/metrics.py
----------------------
 Model evaluation utilities covering:
   - ROC-AUC, Average Precision, False Positive Rate
   - Cross-validation for unsupervised anomaly detectors

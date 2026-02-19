@@ -1,7 +1,7 @@
 """
 AnomalyReportGenerator
 
-Connects detector output → RAG retrieval → DeepSeek (via Ollama) →
+Connects detector output → RAG retrieval → DeepSeek/Qwen (via Ollama) →
 structured report dict.
 
 Two entry points:
