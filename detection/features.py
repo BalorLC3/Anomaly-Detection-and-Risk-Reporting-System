@@ -1,6 +1,4 @@
 """
-detection/features.py
----------------------
 GaussianAnomalyPreprocessor
 
 Feature engineering pipeline optimised for the Gaussian-based anomaly

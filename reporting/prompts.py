@@ -1,6 +1,4 @@
 """
-reporting/prompts.py
---------------------
 All LangChain prompt templates used by AnomalyReportGenerator.
 
 Keeping prompts in one place makes them easy to tune independently
