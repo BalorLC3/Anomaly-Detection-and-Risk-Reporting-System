@@ -1,0 +1,20 @@
+# Saved artefacts (large binary files)
+models/
+knowledge_base/
+reports/
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+notebook/.ipynb_checkpoints/
+
+# OS (csv is publicily available but is 600 MB, so is ignored for the repository)
+.DS_Store
+.data/*.csv 
