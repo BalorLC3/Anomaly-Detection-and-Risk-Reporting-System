@@ -97,7 +97,7 @@ class AnomalyReportGenerator:
             "risk_factors":       self._format_risk_factors(explanation),
             "historical_context": historical_context,
         })
-        return result["text"].strip()
+        return result.strip()
 
     # -- Executive summary --------------------------------------------------
 
@@ -162,7 +162,7 @@ class AnomalyReportGenerator:
             "top_risk_features":  top_features_str,
             "historical_context": historical_context,
         })
-        return result["text"].strip()
+        return result.strip()
 
     # -- Full pipeline ------------------------------------------------------
 

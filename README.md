@@ -64,7 +64,7 @@ The notebook covers:
 | Decision | Rationale |
 |---|---|
 | Diagonal Mahalanobis | Keeps per-feature Z-score explanations interpretable |
-| Robust estimators (trimmed mean, IQR std) | Reduces sensitivity to training-set noise |
+| Robust estimators  | Reduces sensitivity to training-set noise |
 | Empirical thresholds | Matches actual score distribution vs. theoretical chi-square |
 | Per-class models | Captures category-specific normal behaviour |
 | FAISS + Ollama embeddings | Fully local — no external API calls |

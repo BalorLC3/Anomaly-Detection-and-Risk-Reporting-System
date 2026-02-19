@@ -16,7 +16,7 @@ for _dir in (MODELS_DIR, KNOWLEDGE_BASE_DIR, REPORTS_DIR):
     _dir.mkdir(exist_ok=True)
 
 # -- Detector --
-DETECTOR_CONTAMINATION = 0.016   # expected anomaly rate 
+DETECTOR_CONTAMINATION = 1e-12   # expected anomaly rate 
 DETECTOR_MIN_SAMPLES   = 30      # minimum class samples to fit a per-class model
 
 # -- Evaluation --

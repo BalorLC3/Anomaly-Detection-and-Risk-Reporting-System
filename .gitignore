@@ -1,7 +1,6 @@
 # Saved artefacts (large binary files)
 models/
 knowledge_base/
-reports/
 data/
 
 # Python
