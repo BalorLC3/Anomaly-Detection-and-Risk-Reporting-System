@@ -3,6 +3,7 @@
 A production-structured pipeline for detecting abnormal behavioral and risk patterns in historical data, with automated natural-language report generation via local LLMs (DeepSeek/Qwen via Ollama) and RAG-based contextual enrichment.
 
 Qwen is recommended for poor memory, is small and reliable, but I'd use deepseek if memory would'nt be a problem.
+
 ---
 
 ## Project Structure
