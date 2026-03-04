@@ -1,12 +1,12 @@
 """
 AnomalyReportGenerator
 
-Connects detector output → RAG retrieval → DeepSeek/Qwen (via Ollama) →
+Connects detector output -> RAG retrieval -> DeepSeek/Qwen (via Ollama) ->
 structured report dict.
 
 Two entry points:
-  explain_anomaly()      — single-row natural-language explanation
-  run_full_pipeline()    — executive summary + per-anomaly explanations
+  explain_anomaly()      - single-row natural-language explanation
+  run_full_pipeline()    - executive summary + per-anomaly explanations
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ class AnomalyReportGenerator:
     ----------
     model_name     : Ollama model tag (default: config.OLLAMA_MODEL).
     knowledge_base : Fitted AnomalyKnowledgeBase for RAG context retrieval.
-    temperature    : LLM sampling temperature (default: 0.2 — factual/consistent).
+    temperature    : LLM sampling temperature (default: 0.2 - factual/consistent).
     """
 
     def __init__(
@@ -177,7 +177,7 @@ class AnomalyReportGenerator:
         Run the complete reporting pipeline:
           1. Executive summary for the full detection run.
           2. Individual LLM explanations for each anomaly, sorted by severity
-             (high → medium → low) then by anomaly score descending.
+             (high -> medium -> low) then by anomaly score descending.
 
         Parameters
         ----------
@@ -244,4 +244,4 @@ class AnomalyReportGenerator:
         """Persist the full report dict to a JSON file."""
         with open(path, "w", encoding="utf-8") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
-        print(f"[Pipeline] Report saved → {path}")
+        print(f"[Pipeline] Report saved -> {path}")

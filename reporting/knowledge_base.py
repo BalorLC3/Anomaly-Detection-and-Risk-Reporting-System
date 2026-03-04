@@ -2,7 +2,7 @@
 FAISS-based RAG knowledge base built from historical anomaly cases
 and domain documentation.
 
-All embeddings are generated locally via Ollama — no external API calls.
+All embeddings are generated locally via Ollama - no external API calls.
 """
 
 from __future__ import annotations
@@ -46,11 +46,11 @@ class AnomalyKnowledgeBase:
         Build from a list of historical case dicts.
 
         Each dict should contain:
-            case_id     : str — unique identifier
-            category    : str — transaction category
-            description : str — free-text summary of the anomaly
-            risk_factors: List[str] — feature names that triggered the flag
-            resolution  : str — outcome / action taken
+            case_id     : str - unique identifier
+            category    : str - transaction category
+            description : str - free-text summary of the anomaly
+            risk_factors: List[str] - feature names that triggered the flag
+            resolution  : str - outcome / action taken
         """
         docs = []
         for rec in records:
@@ -90,7 +90,7 @@ class AnomalyKnowledgeBase:
 
     def save(self, path: str | Path) -> None:
         if self.vectorstore is None:
-            raise RuntimeError("Knowledge base is empty — nothing to save.")
+            raise RuntimeError("Knowledge base is empty - nothing to save.")
         self.vectorstore.save_local(str(path))
 
     def load(self, path: str | Path) -> "AnomalyKnowledgeBase":

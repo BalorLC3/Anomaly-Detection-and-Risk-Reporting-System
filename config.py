@@ -1,5 +1,5 @@
 """
-config.py — Central configuration for the anomaly detection system.
+config.py - Central configuration for the anomaly detection system.
 All paths, model parameters, and LLM settings live here.
 """
 

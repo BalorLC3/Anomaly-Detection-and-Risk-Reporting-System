@@ -23,7 +23,7 @@ from detection.detector import MultiClassGaussianAnomalyDetector
 import config
 
 
-# ── Core evaluation ────────────────────────────────────────────────────────
+# -- Core evaluation --------------------------------------------------------
 
 def evaluate(
     result_df: pd.DataFrame,
@@ -73,7 +73,7 @@ def evaluate(
     }
 
 
-# ── Cross-validation ───────────────────────────────────────────────────────
+# -- Cross-validation -------------------------------------------------------
 
 def cross_validate_detector(
     df: pd.DataFrame,
@@ -147,7 +147,7 @@ def cross_validate_detector(
     return pd.concat([cv_df, summary, std_row])
 
 
-# ── Per-class breakdown ────────────────────────────────────────────────────
+# -- Per-class breakdown ----------------------------------------------------
 
 def per_class_report(
     result_df: pd.DataFrame,

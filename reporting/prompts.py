@@ -57,7 +57,7 @@ SUMMARY_REPORT_PROMPT = PromptTemplate(
     ],
     template="""You are a senior risk analyst writing an executive summary for a periodic fraud risk report.
 
-## Detection Run — {period}
+## Detection Run - {period}
 - Total records scored : {total_records}
 - Anomalies detected   : {total_anomalies}  ({anomaly_rate:.1%} of total)
 
@@ -71,11 +71,11 @@ SUMMARY_REPORT_PROMPT = PromptTemplate(
 {historical_context}
 
 ## Instructions
-Write a professional executive summary (300–400 words) covering:
+Write a professional executive summary (300 - 400 words) covering:
 1. Overall risk posture for this period.
 2. Which categories require immediate attention and why.
 3. Whether patterns in the risk features appear systemic or isolated.
-4. Comparison with historical cases — normal variation or a new trend?
+4. Comparison with historical cases - normal variation or a new trend?
 5. Recommended actions, prioritised by urgency.
 
 Be direct and specific. Avoid generic statements.
